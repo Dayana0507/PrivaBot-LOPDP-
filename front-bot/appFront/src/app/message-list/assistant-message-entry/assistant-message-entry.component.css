@@ -1,0 +1,26 @@
+
+
+.assistant-message-entry-container{
+    display: flex;
+    justify-content: flex-start;
+    .assistant-message-entry-content{
+        width: 40%;
+        padding:10px ;
+        border-radius: 10px;
+        background-color: #cdaff5;
+        color: black;
+        text-align: left;
+        /* margin-bottom: 10px; */
+
+    }
+}
+
+:host{
+    display: block;
+}
+
+.assistant-message-entry-content p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}

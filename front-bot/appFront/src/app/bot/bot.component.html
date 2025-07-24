@@ -1,0 +1,60 @@
+<mat-toolbar>
+  <img src="logo_bot.png" alt="Logo de Privabot" class="logo" />
+  <span id="titulo">PRIVABOT</span>
+  <span class="example-spacer"></span>
+  <button
+    matIconButton
+    class="example-icon"
+    aria-label="Botón historial"
+    (click)="drawer.toggle()"
+  >
+    <span id="historialText">HISTORIAL</span>
+    <mat-icon>save</mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container" autosize>
+  <!-- Panel lateral -->
+  <mat-drawer #drawer class="example-sidenav" mode="side" position="end">
+    <div *ngFor="let historial of historiales; let i = index">
+      <button mat-button (click)="mostrarHistorialCompleto(i)">
+        <mat-icon id="iconoHistorial">keyboard_arrow_left</mat-icon>
+        {{ i + 1 }}: {{ historial[0]?.mensaje || 'Sin Historial' }}
+      </button>
+    </div>
+  </mat-drawer>
+
+  <!-- Contenido principal -->
+  <div class="example-sidenav-content">
+    <!-- Mostrar chat si no hay historial seleccionado -->
+    <ng-container *ngIf="!historialSeleccionado; else historialVista">
+      <app-chat (historialGuardado)="agregarAlHistorial($event)"></app-chat>
+    </ng-container>
+
+    <!-- Mostrar historial si uno está seleccionado -->
+    <ng-template #historialVista>
+      <div class="historial-container">
+        <button class="volver-btn" (click)="historialSeleccionado = null">
+          ⬅ Volver al chat
+        </button>
+        <h3 class="historial-title">🕘 Historial Completo</h3>
+
+        <div
+          class="message-container"
+          *ngFor="let mensaje of historialSeleccionado"
+        >
+          <div class="message">
+            <div class="user-message">
+              <strong>Tú:</strong>
+              <p>{{ mensaje.mensaje }}</p>
+            </div>
+            <div class="bot-message" *ngIf="mensaje.respuesta">
+              <strong>Bot:</strong>
+              <p>{{ mensaje.respuesta }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</mat-drawer-container>

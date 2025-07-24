@@ -1,0 +1,11 @@
+# Ignorar dependencias
+node_modules/
+dist/
+.env
+
+# Ignorar archivos temporales
+*.log
+*.tmp
+
+# Ignorar configuraciones locales
+.vscode/

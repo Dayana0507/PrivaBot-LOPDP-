@@ -1,0 +1,36 @@
+/* .chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background-color: aqua;
+}
+
+.chat-scrollable {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+} */
+.chat-container {
+  position: fixed; /* cambia de relative a fixed */
+  top: 60px;        /* si tienes navbar, ajusta el valor */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-area {
+  flex: 1;
+  overflow-y: auto;
+  background-color: white;
+  padding: 20px;
+}
+
+.input-area {
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+

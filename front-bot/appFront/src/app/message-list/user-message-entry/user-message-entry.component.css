@@ -1,0 +1,22 @@
+
+.user-message-entry-container{
+    display: flex;
+    justify-content: flex-end;
+    .user-message-entry-content{
+        width: 40%;
+        padding:10px ;
+        border-radius: 10px;
+        background-color: #e7dcf7;
+        color: black;
+        text-align: right;
+    }
+}
+:host{
+    display: block;
+}
+
+.user-message-entry-content p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}

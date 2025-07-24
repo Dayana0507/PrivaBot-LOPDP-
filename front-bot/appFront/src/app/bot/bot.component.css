@@ -1,0 +1,110 @@
+mat-toolbar {
+  background-color: #ffffff;
+  color: #a67df7;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-bottom: 1px solid #e0dfe4;
+}
+
+mat-toolbar .logo {
+  height: 50px;
+  margin-right: 8px;
+}
+
+mat-toolbar #titulo {
+  font-weight: 600;
+  font-size: 20px;
+  color: #521ab3;
+}
+
+mat-toolbar .example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar #historialText {
+  margin-right: 10px;
+  color: #521ab3;
+  font-weight: 550;
+  font-size: 15px;
+}
+
+mat-toolbar mat-icon {
+  color: #521ab3;
+  
+}
+
+.example-icon {
+  border: none;
+  background: none;
+}
+
+.example-sidenav {
+  width: 220px;
+  background-color: white; /* Lavanda claro */
+  padding: 16px;
+  border-left: 1px solid #ccc;
+}
+.example-sidenav-content {  
+  padding: 24px;
+}
+
+mat-drawer button {
+  width: 100%;
+  margin-bottom: 8px;
+  border-radius: 20px;
+  background-color: #d7b9f5;
+  color: #000;
+  font-weight: 500;
+}
+
+mat-drawer mat-icon {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.example-container {
+  height: 100vh;
+  background-color: #f8f3fd;
+}
+
+.historial-container {
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+  background: #fafafa;
+}
+
+.historial-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #030008;
+}
+
+.message-container {
+  margin-bottom: 15px;
+  border-left: 4px solid #673ab7;
+  padding-left: 10px;
+  background: #e0d7f3;
+  border-radius: 8px;
+}
+
+.user-message p,
+.bot-message p {
+  margin: 5px 0;
+  color: #000;
+}
+
+.mat-drawer-container {
+
+color:black;
+}
+.volver-btn {
+  margin-bottom: 15px;
+  background-color: #673ab7;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}

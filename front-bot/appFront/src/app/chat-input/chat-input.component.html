@@ -1,0 +1,14 @@
+<div class="app-chat-input-container">
+    <div 
+    #messageInput    
+    contenteditable="true" 
+    class="message-input" 
+    (keydown.enter)="sendMessage(); $event.preventDefault()"
+    ></div>  
+    <div class="app-chat-input-actions-buttons">
+        <button class="send-button"  (click)="sendMessage()" >
+            <mat-icon>send</mat-icon>
+        </button>       
+    </div>
+</div>
+

@@ -1,0 +1,16 @@
+<!-- <div class="chat-container">
+  <div class="chat-scrollable">
+    <app-message-list [messageEntries]="messageEntries()"></app-message-list>
+  </div>
+
+  <app-chat-input (message)="updateMessageEntries($event)"></app-chat-input>
+</div> -->
+
+<div class="chat-container">
+  <div class="message-area">
+    <app-message-list [messageEntries]="messageEntries()"></app-message-list>
+  </div>
+  <div class="input-area">
+    <app-chat-input (message)="updateMessageEntries($event)"></app-chat-input>
+  </div>
+</div>

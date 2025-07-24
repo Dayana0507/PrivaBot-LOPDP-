@@ -1,0 +1,44 @@
+<!-- ENCABEZADO -->
+<header class="header">
+  <div class="logo">
+    <img src="logo_bot.png" alt="Privabot logo" />
+    <span>PRIVABOT</span>
+  </div>
+</header>
+
+<!-- CONTENIDO PRINCIPAL -->
+
+
+<div class="hero-container">
+  <div class="hero-text">
+    <h1>
+      Conoce tus derechos. <br />
+      Resuelve tus dudas con <br />
+      <span class="highlight">el bot de la LOPDP.!</span>
+    </h1>
+
+    <p class="info-line">
+      <span class="icon">❕</span>
+      Descubre qué información puedes obtener conversando con el bot.
+    </p>
+
+    <!-- Formulario de inicio de sesión -->
+    <form class="login-form" (ngSubmit)="onLogin()">
+      <input
+        type="email"
+        name="email"
+        [(ngModel)]="email"
+        required
+        placeholder="ejemplo@correo.com"
+      />
+      <button type="submit">INICIAR</button>
+    </form>
+  </div>
+
+
+  
+
+  <div class="hero-image">
+    <img src="icon-circulo.jpeg" alt="Bot y usuario" />
+  </div>
+</div>
