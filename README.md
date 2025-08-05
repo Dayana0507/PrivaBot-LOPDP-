@@ -10,7 +10,10 @@ Funcionalidades
 
 -Diseño modular para facilitar la escalabilidad y mantenimiento.
 
+
 BackEnd-ChatBot   → Lógica del backend, procesamiento de intents, conexión a Dialogflow,FLASK,ontología en formato .rdf
+
 Front-bot         → Interfaz de usuario del chatbot (frontend) con Angular
+
 Resultados        → Preguntas de prueba de funcionalidad
 
